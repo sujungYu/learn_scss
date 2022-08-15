@@ -1,76 +1,31 @@
-<!-- # SCSS Masterclass
+# learn_scss
+노마드코더 <CSS Layout 마스터>
 
-(S)CSS Layout Masterclass: Flexbox & Grid
+## Content
+### SCSS
+코드의 재활용성 및 가독성을 높여 개발의 효율을 올리기 위한 CSS 전처리기 언어이다.
 
-## Flexbox:
+#### Variables
++ website에서 중요한 color, styles을 저장하고 싶을 때 사용한다.
++ src/scss/_variables.scss(파일명 앞에 _가 있으면 css로 컴파일되지 않는다.(scss만을 위한 파일))
 
-- [x] flex-direction
-- [x] order
-- [x] justify-content
-- [x] align-items
-- [x] align-self
-- [x] flex-wrap
-- [x] align-content
-- [x] flex-grow
-- [x] flex-shrink
-- [x] flex-basis
+#### Nesting
++ 중첩
++ 코드를 직관적으로 작성 가능하다.
 
-## Grid:
+#### Mixins
++ SCSS functionality를 재사용할 수 있게 해준다.
++ src/scss/mixins.scss
++ @mixin (mixins.scss)
++ @include (styles.scss)
 
-- [x] grid-template-columns
-- [x] grid-template-rows
-- [x] column-gap
-- [x] row-gap
-- [x] gap
-- [x] grid-template-areas
-- [x] grid-column-start
-- [x] grid-column-end
-- [x] grid-row-start
-- [x] grid-row-end
-- [x] grid-column
-- [x] grid-row
-- [x] grid-template
-- [x] justify-items
-- [x] align-items
-- [x] place-items
-- [x] justify-content
-- [x] align-content
-- [x] place-content
-- [x] justify-self
-- [x] align-self
-- [x] place-self
-- [x] grid-auto-rows
-- [x] grid-auto-flow
-- [x] grid-auto-columns
+#### Extend
++ 다른 코드를 확장(extend) 하거나 코드를 재활용하고 싶을 때 사용한다.
++ page에서 분리해야하는 element들이 많을 때 유용하다.
++ src/scss/_buttons.scss
++ % (_buttons.scss)
++ @extend (styles.scss)
 
-### Keywords & Functions:
-
-- [x] repeat
-- [x] fr
-- [x] minmax
-- [x] auto-fit
-- [x] auto-fill
-- [x] min-content
-- [x] max-content
-
-## SCSS:
-
-- [x] Variables
-- [x] Nesting
-- [x] Mixins
-- [x] Extend
-- [x] Responsive Mixins
-
-## To Clone:
-
-- [x] [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
-- [x] [https://paint-box.com/](https://paint-box.com/)
-- [x] [http://10x19.co/](http://10x19.co/)
-- [x] [http://www.z-o-o.fr/](http://www.z-o-o.fr/)
-- [x] [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
-- [x] [https://tolv.dk/](https://tolv.dk/)
-- [x] [https://rodicdavidson.co.uk/](https://rodicdavidson.co.uk/)
-- [x] [https://beige.de/](https://beige.de/)
-- [x] [http://donicaida.com/](http://donicaida.com/)
-- [x] [https://canalstreet.market/](https://canalstreet.market/)
-- [x] [https://wonhundred.com/](https://wonhundred.com/) -->
+#### Responsive Mixins
++ @content (mixins.scss)
++ include (styles.scss)
